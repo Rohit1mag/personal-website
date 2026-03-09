@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build
+/build
+
+# Misc
+.DS_Store
+*.pem
+*.log
+
+# Env
+.env*
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# Original photo (we use profile.jpg)
+PXL_20230430_200223139~2.jpg

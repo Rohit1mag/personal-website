@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Kota | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">Rohit</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/Rohit1mag" target="_blank" rel="noopener">GitHub</a>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content hero-with-photo">
+        <div>
+        <span class="badge">Software Engineer</span>
+        <h1>Rohit <span class="gradient-text">Kota</span></h1>
+        <p class="tagline">Building full-stack systems, ML pipelines & real-time search</p>
+        <div class="hero-links">
+          <a href="https://github.com/Rohit1mag" target="_blank" rel="noopener" class="btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.22 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/rohit-kota4/" target="_blank" rel="noopener" class="btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:rohitkota4@gmail.com" class="btn-accent">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+        </div>
+        <a href="#about" class="scroll-hint">Scroll to explore ↓</a>
+        </div>
+        <div class="hero-photo">
+          <img src="profile.jpg" alt="Rohit Kota" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a Computer Science student at Cal Poly SLO (graduating Dec 2026) with a passion for building scalable systems, real-time search, and ML-powered applications.</p>
+            <p>I've architected search engines that serve 1,000+ users, built AI transcript parsers with 94% accuracy, and led teams of 10+ developers. I thrive at the intersection of full-stack development and data-driven problem solving.</p>
+          </div>
+          <div class="card">
+            <h3>Education</h3>
+            <p class="card-title">California Polytechnic State University - San Luis Obispo</p>
+            <p class="card-accent">Bachelor of Science in Computer Science</p>
+            <p class="card-muted">December 2026</p>
+            <p class="card-muted">US Citizen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2><span class="gradient-text">Experience</span></h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Software Engineer <span class="accent">@ Livin</span></h3>
+            <p class="period">Apr. 2025 – Jan. 2026</p>
+            <ul>
+              <li>Architected real-time property and roommate search engine using Typesense with debouncing, reducing API calls and costs by 80% while serving 1,000+ users</li>
+              <li>Created roommate compatibility matching algorithm evaluating 8+ criteria to surface top matches per user</li>
+              <li>Integrated Google Maps Places API to display nearby amenities, reducing apartment search time</li>
+              <li>Overhauled Firestore database schema from nested to flat structure, reducing query latency by 30% (450ms → 315ms)</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>Software Engineer <span class="accent">@ AWS/CSU AI Summer Camp</span></h3>
+            <p class="period">Jul. 2025 – Aug. 2025</p>
+            <ul>
+              <li>Engineered college transcript parser using Amazon Bedrock with chain-of-thought reasoning, 94% accuracy across 15+ PDF formats</li>
+              <li>Developed Streamlit web app mapping transfer equivalencies between community colleges and CSU campuses, processing 3,000+ course records</li>
+              <li>Deployed serverless backend with AWS Lambda and DynamoDB, 150ms average query latency</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>Machine Learning Researcher <span class="accent">@ Cal Poly SLO</span></h3>
+            <p class="period">Jun. 2025 – Aug. 2025</p>
+            <ul>
+              <li>Built Python ETL pipeline processing 1,090-response survey dataset with pandas, scikit-learn, and NLTK</li>
+              <li>Implemented LDA topic modeling to cluster 500+ free-text responses with seaborn/matplotlib visualizations</li>
+              <li>Automated statistical testing workflows, reducing manual computation time by 75%</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3>Software Engineer Intern <span class="accent">@ Spread Goodness LLC</span></h3>
+            <p class="period">Jan. 2025 – Jun. 2025</p>
+            <ul>
+              <li>Designed responsive React.js web application with Firebase integration, secure auth, and real-time database operations</li>
+              <li>Delivered 10+ key features on schedule through Agile workflows and code reviews</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section">
+      <div class="container">
+        <h2><span class="gradient-text">Leadership</span></h2>
+        <div class="leadership-grid">
+          <div class="card">
+            <h3>Technical Lead</h3>
+            <p class="card-accent">CodeBox (Club)</p>
+            <p class="card-muted">Nov. 2025 – Present</p>
+            <p>Led team of 10 developers building app for campus freshmen, overseeing technical architecture, code reviews, and mentoring.</p>
+          </div>
+          <div class="card">
+            <h3>Technical Product Manager</h3>
+            <p class="card-accent">Hack4Impact (Nonprofit)</p>
+            <p class="card-muted">Oct. 2024 – Jun. 2025</p>
+            <p>Led cross-functional team of 14, conducted 20+ customer interviews, iterated with designers and established technical direction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2><span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Featured work and pinned repositories from my GitHub.</p>
+        
+        <div class="projects-featured">
+          <a href="https://github.com/Rohit1mag/comment-insights" target="_blank" rel="noopener" class="project-card project-featured">
+            <h3>ReviewSense</h3>
+            <p>Full-stack AI-powered review analysis platform using Next.js, FastAPI, and Llama 4 that processes YouTube comments and Google Maps reviews to generate actionable recommendations and sentiment clusters.</p>
+            <div class="tech-tags">
+              <span>Next.js</span><span>FastAPI</span><span>Llama 4</span><span>YouTube API</span><span>Google Places</span><span>Vercel</span>
+            </div>
+          </a>
+          <a href="https://github.com/Rohit1mag/ghosthire" target="_blank" rel="noopener" class="project-card project-featured">
+            <h3>GhostHire</h3>
+            <p>Job listing platform that sources only from non-mainstream sources so you can gain an edge in the job search.</p>
+            <div class="tech-tags"><span>Python</span></div>
+          </a>
+        </div>
+
+        <h3 class="github-section-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:0.5rem"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.22 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>More on GitHub</h3>
+        <div class="projects-grid">
+          <a href="https://github.com/Rohit1mag/comment-insights" target="_blank" rel="noopener" class="project-card-small">
+            <h4>Comment Insights</h4>
+            <p>Get high-quality feedback for your channel in one click!</p>
+            <span class="tech">Python</span>
+          </a>
+          <a href="https://github.com/Rohit1mag/indie-games-eda" target="_blank" rel="noopener" class="project-card-small">
+            <h4>Indie Games EDA</h4>
+            <p>Exploratory Data Analysis on Indie Games dataset from Steam.</p>
+            <span class="tech">Python, Pandas, Seaborn</span>
+          </a>
+          <a href="https://github.com/Rohit1mag/mtg-cards-cluster-modeling" target="_blank" rel="noopener" class="project-card-small">
+            <h4>MTG Cards Cluster Modeling</h4>
+            <p>Supervised and Unsupervised learning on Magic: The Gathering card data.</p>
+            <span class="tech">Python, Scikit-learn</span>
+          </a>
+          <a href="https://github.com/Rohit1mag/imdb-parser" target="_blank" rel="noopener" class="project-card-small">
+            <h4>IMDB Parser</h4>
+            <p>Parses IMDB articles and creates sorted table of movies by rating.</p>
+            <span class="tech">Python</span>
+          </a>
+          <a href="https://github.com/codebox-calpoly/AuraFarm" target="_blank" rel="noopener" class="project-card-small">
+            <h4>AuraFarm</h4>
+            <p>Campus app for freshmen built with CodeBox team.</p>
+            <span class="tech">React, Firebase</span>
+          </a>
+        </div>
+        <a href="https://github.com/Rohit1mag?tab=repositories" target="_blank" rel="noopener" class="link-accent">View all repositories →</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2><span class="gradient-text">Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span>Java</span><span>Python</span><span>C/C++</span><span>MySQL</span><span>JavaScript</span><span>TypeScript</span><span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Frameworks</h3>
+            <div class="skill-tags">
+              <span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>React Native</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Cloud</h3>
+            <div class="skill-tags">
+              <span>Git</span><span>Docker</span><span>AWS</span><span>GCP</span><span>Firebase</span><span>Postman</span><span>Typesense</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>ML & Data</h3>
+            <div class="skill-tags">
+              <span>Scikit-learn</span><span>Seaborn</span><span>Pandas</span><span>SciPy</span><span>NLTK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Get in <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">Open to new opportunities and collaborations. Let's build something great together.</p>
+        <div class="contact-grid">
+          <a href="mailto:rohitkota4@gmail.com" class="contact-card">
+            <span class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">rohitkota4@gmail.com</span>
+          </a>
+          <a href="tel:4086467291" class="contact-card">
+            <span class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">408-646-7291</span>
+          </a>
+          <a href="https://linkedin.com/in/rohit-kota4/" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/rohit-kota4</span>
+          </a>
+          <a href="https://github.com/Rohit1mag" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.22 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></span>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/Rohit1mag</span>
+          </a>
+        </div>
+        <p class="location">📍 San Luis Obispo, CA · US Citizen</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rohit Kota</p>
+    <div>
+      <a href="https://github.com/Rohit1mag" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/rohit-kota4/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:rohitkota4@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+      document.querySelector('.nav-toggle').classList.toggle('active');
+    }
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
