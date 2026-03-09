@@ -13,13 +13,13 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 text-muted leading-relaxed">
             <p>
-              I&apos;m a Computer Science student at Cal Poly SLO (graduating Dec 2026) with a passion for 
-              building scalable systems, real-time search, and ML-powered applications.
+              I&apos;m a Computer Science student at Cal Poly SLO with a passion for 
+              building scalable systems, user-centric products, and ML-powered applications.
             </p>
             <p>
-              I&apos;ve architected search engines that serve 1,000+ users, built AI transcript parsers 
-              with 94% accuracy, and led teams of 10+ developers. I thrive at the intersection of 
-              full-stack development and data-driven problem solving.
+              I&apos;ve architected applications capable of serving thousands of users, built an 
+              Amazon Bedrock-based college transcript parser with 94% accuracy, and led teams of 10+ developers. I thrive at the intersection of 
+              full-stack development and complex problem solving.
             </p>
           </div>
 
