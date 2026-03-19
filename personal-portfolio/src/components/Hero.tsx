@@ -64,7 +64,7 @@ export default function Hero() {
         <div className="flex-shrink-0 flex justify-center md:justify-end animate-fade-in animation-delay-200">
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl shadow-accent/10">
             <Image
-              src="/profile.jpg"
+              src="/RohitDP.png"
               alt="Rohit Kota"
               fill
               priority

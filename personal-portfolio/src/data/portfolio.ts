@@ -1,7 +1,7 @@
 export const profile = {
   name: "Rohit Kota",
   title: "Software Engineer",
-  tagline: "Building full-stack systems, ML pipelines & real-time search",
+  tagline: "Building full-stack systems, ML pipelines & cloud infrastructure",
   email: "rohitkota4@gmail.com",
   phone: "408-646-7291",
   linkedin: "https://linkedin.com/in/rohit-kota4/",
