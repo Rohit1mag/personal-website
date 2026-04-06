@@ -36,9 +36,9 @@ open index.html
 
 - **Hero** - Name, tagline, and social links
 - **About** - Bio and education (Cal Poly SLO, CS '26)
-- **Experience** - Livin, AWS/CSU AI Camp, Cal Poly ML Research, Spread Goodness
-- **Leadership** - CodeBox Technical Lead, Hack4Impact TPM
-- **Projects** - ReviewSense, GhostHire, and pinned GitHub repos (Comment Insights, Indie Games EDA, MTG Cards, IMDB Parser, AuraFarm)
+- **Experience** - Livin, AWS/CSU AI Camp, Cal Poly ML Research
+- **Leadership** - Apple Next-Gen Innovators, CodeBox Technical Lead, Hack4Impact TPM
+- **Projects** - ReviewSense, Vestline, and pinned GitHub repos (Comment Insights, Indie Games EDA, MTG Cards, IMDB Parser, AuraFarm)
 - **Skills** - Languages, frameworks, tools, ML stack
 - **Contact** - Email, phone, LinkedIn, GitHub
 
