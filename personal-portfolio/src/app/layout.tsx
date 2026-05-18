@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rohit Kota | Software Engineer",
-  description: "Software Engineer specializing in full-stack development, ML, and real-time systems. Cal Poly SLO '26.",
+  title: "Rohit Kota | Co-Founder & CTO · Software Engineer",
+  description:
+    "Co-Founder & CTO at Scoop Technologies; Founding Engineer at Livin; AWS AI Summer Program; ML research at Cal Poly. BS Computer Science, Dec 2026.",
 };
 
 export default function RootLayout({

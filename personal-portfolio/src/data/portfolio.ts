@@ -1,7 +1,8 @@
 export const profile = {
   name: "Rohit Kota",
-  title: "Software Engineer",
-  tagline: "Building full-stack systems, ML pipelines & software that actually ships",
+  title: "Co-Founder & CTO · Software Engineer",
+  tagline:
+    "Technical architecture for shipping products—React Native & Supabase ride-sharing at Scoop, search & matching at Livin, and AWS Bedrock–powered tooling.",
   email: "rohitkota4@gmail.com",
   phone: "408-646-7291",
   linkedin: "https://linkedin.com/in/rohit-kota4/",
@@ -11,38 +12,63 @@ export const profile = {
 };
 
 export const education = {
-  school: "California Polytechnic State University - San Luis Obispo",
+  school: "California Polytechnic State University – San Luis Obispo",
   degree: "Bachelor of Science in Computer Science",
   graduation: "December 2026",
 };
 
+/** Mirrors resume “Technical Skills” (Languages / Tools & Libraries). */
 export const skills = {
-  languages: ["Java", "Python", "C++", "SQL", "JavaScript", "TypeScript", "HTML/CSS"],
-  frameworks: ["React", "Next.js", "Node.js", "Express", "React Native", "FastAPI"],
-  tools: ["Git", "Docker", "AWS", "GCP", "Firebase", "Supabase", "Typesense", "Tailwind CSS"],
-  ml: ["Scikit-learn", "Pandas", "NLTK", "SciPy", "Seaborn"],
+  languages: [
+    "Python",
+    "JavaScript / TypeScript",
+    "React",
+    "Next.js",
+    "Express",
+    "React Native",
+    "C++",
+    "SQL",
+  ],
+  toolsAndLibraries: [
+    "FastAPI",
+    "Supabase",
+    "AWS (Bedrock, Lambda, DynamoDB)",
+    "Firebase",
+    "Docker",
+    "Scikit-learn",
+    "Pandas",
+  ],
 };
 
 export const experience = [
   {
+    company: "Scoop Technologies LLC",
+    role: "Co-Founder & CTO",
+    period: "Apr. 2026 – Present",
+    highlights: [
+      "Leading all technical architecture for an on-demand group ride-sharing platform built on React Native, Supabase, and Stripe",
+      "Recruiting and managing software engineering interns; overseeing backend infrastructure, payments, and real-time trip tracking systems from zero to App Store approval",
+    ],
+  },
+  {
     company: "Livin",
-    role: "Software Engineer",
+    role: "Founding Engineer",
     period: "Apr. 2025 – Jan. 2026",
     highlights: [
       "Architected real-time property and roommate search engine using Typesense with debouncing, cutting API calls and costs by 80% while serving 1,000+ users",
       "Built roommate compatibility matching algorithm evaluating 8+ criteria (lifestyle habits, budget, location, cleanliness) to surface personalized top matches per user",
-      "Integrated Google Maps Places API to surface nearby amenities per listing, reducing tenant apartment search time",
+      "Integrated Google Maps API to surface nearby amenities per listing, reducing apartment search time by 40%",
       "Overhauled Firestore schema from nested to flat structure, reducing query latency by 30% (450ms → 315ms) across all user searches",
     ],
   },
   {
-    company: "AWS/CSU AI Summer Camp",
+    company: "AWS AI Summer Program",
     role: "Software Engineer",
     period: "Jul. 2025 – Aug. 2025",
     highlights: [
       "Engineered college transcript parser using Amazon Bedrock with chain-of-thought reasoning to extract CS course data across 15+ varied PDF formats with 94% accuracy",
       "Developed Streamlit web application that automatically maps transfer equivalencies between community colleges and CSU campuses, processing 3,000+ course records",
-      "Deployed serverless backend with AWS Lambda and DynamoDB, achieving 150ms average query latency with auto-scaling infrastructure",
+      "Deployed serverless backend on AWS Lambda and DynamoDB, achieving 150ms average query latency",
     ],
   },
   {
@@ -57,81 +83,68 @@ export const experience = [
   },
 ];
 
-export const leadership = [
+export type LeadershipEntry = {
+  org: string;
+  role: string;
+  period: string;
+  description?: string;
+  bullets?: string[];
+};
+
+export const leadership: LeadershipEntry[] = [
+  {
+    org: "CodeBox",
+    role: "Technical Lead",
+    period: "Nov. 2025 – Present",
+    bullets: [
+      "Led team of 10 developers building Aura Farm, a location-based social challenge app for Cal Poly students built with React Native, Expo, and Supabase; on the Apple App Store",
+      "Oversaw architecture decisions across auth, real-time leaderboard, image upload pipeline, and GPS-verified challenge submission; conducted code reviews and mentored members in modern mobile development workflows",
+    ],
+  },
   {
     org: "Apple Next-Gen Innovators Program",
     role: "Mentee",
-    period: "Sept. 2025 – Apr. 2026",
+    period: "Sep. 2025 – Present",
     description:
-      "Selected for Apple's Next-Gen Innovators mentorship program, receiving 1:1 guidance from a software engineer on career development, technical growth, and navigating the industry",
+      "Selected for Apple's competitive Next-Gen Innovators mentorship program, receiving 1:1 guidance from a senior software engineer on career development, technical growth, and navigating the industry",
   },
   {
-    org: "CodeBox (Club)",
-    role: "Technical Lead",
-    period: "Nov. 2025 – Present",
-    description:
-      "Lead team of 10 developers building an app for incoming Cal Poly freshmen, overseeing architecture decisions, conducting code reviews, and mentoring members in modern development workflows",
-  },
-  {
-    org: "Hack4Impact (Nonprofit)",
+    org: "Hack4Impact",
     role: "Technical Product Manager",
     period: "Oct. 2024 – Jun. 2025",
-    description:
-      "Led cross-functional team of 14 to deliver a web solution for a nonprofit client, conducting 20+ customer interviews and driving alignment between designers, engineers, and stakeholders",
+    bullets: [
+      "Led cross-functional team of 14 to deliver a web solution for a nonprofit client, conducting 30+ customer interviews and driving alignment between designers, engineers, and stakeholders",
+    ],
   },
 ];
 
-// Featured projects from resume + GitHub pinned
-export const projects = [
+export type ProjectEntry = {
+  name: string;
+  description: string;
+  tech: string[];
+  period?: string;
+  link: string;
+  featured: boolean;
+};
+
+/** Resume Projects section + GitHub links where applicable */
+export const projects: ProjectEntry[] = [
   {
     name: "ReviewSense",
+    period: "Nov. 2025 – Jan. 2026",
     description:
-      "Full-stack AI review analysis platform using Next.js, FastAPI, and Llama 4 Maverick that processes YouTube comments and Google Maps reviews to generate sentiment clusters and actionable recommendations. Integrated YouTube Data API and Google Places API with Clerk authentication and usage tracking; deployed on Vercel and Render.",
-    tech: ["Next.js", "FastAPI", "Llama 4", "YouTube API", "Google Places API", "Clerk", "Vercel", "Render"],
+      "Built full-stack AI review analysis platform using Next.js, FastAPI, and Kimi K2.5 that processes YouTube comments and Google Maps reviews to generate sentiment clusters and actionable recommendations. Integrated YouTube Data API and Google Places API with Clerk authentication; deployed production SaaS app on Vercel and Render.",
+    tech: ["Next.js", "FastAPI", "Kimi K2.5", "YouTube API", "Google Places API", "Clerk", "Vercel", "Render"],
     link: "https://github.com/Rohit1mag/comment-insights",
     featured: true,
   },
   {
     name: "Vestline",
+    period: "Jan. 2026 – Apr. 2026",
     description:
-      "Equity vesting management tool for startup founders to track cap tables with configurable vesting schedules, cliff periods, and real-time progress visualizations. Clerk authentication with Supabase row-level security for multi-tenant isolation; deployed on Vercel.",
-    tech: ["React", "TypeScript", "Supabase", "Clerk", "Recharts"],
+      "Developed equity vesting management tool for startup founders to track cap tables with configurable vesting schedules, cliff periods, and real-time progress visualizations. Implemented Clerk authentication with Supabase row-level security and a Gemma 4 (31B params) chatbot for natural language queries with sub-200ms response times.",
+    tech: ["React", "TypeScript", "Supabase", "Clerk", "Recharts", "Gemma 4"],
     link: "https://github.com/Rohit1mag/vestline",
     featured: true,
-  },
-  {
-    name: "Comment Insights",
-    description: "Get high-quality feedback for your channel in one click! AI-powered YouTube comment analysis.",
-    tech: ["Python"],
-    link: "https://github.com/Rohit1mag/comment-insights",
-    featured: false,
-  },
-  {
-    name: "Indie Games EDA",
-    description: "Exploratory Data Analysis on Indie Games dataset from Steam.",
-    tech: ["Python", "Pandas", "Seaborn"],
-    link: "https://github.com/Rohit1mag/indie-games-eda",
-    featured: false,
-  },
-  {
-    name: "MTG Cards Cluster Modeling",
-    description: "Supervised and Unsupervised learning techniques on Magic: The Gathering card data.",
-    tech: ["Python", "Jupyter", "Scikit-learn"],
-    link: "https://github.com/Rohit1mag/mtg-cards-cluster-modeling",
-    featured: false,
-  },
-  {
-    name: "IMDB Parser",
-    description: "Parses articles on the IMDB site and creates a sorted table of movies by rating.",
-    tech: ["Python"],
-    link: "https://github.com/Rohit1mag/imdb-parser",
-    featured: false,
-  },
-  {
-    name: "AuraFarm",
-    description: "Campus app for freshmen built with CodeBox team.",
-    tech: ["React", "Firebase"],
-    link: "https://github.com/codebox-calpoly/AuraFarm",
-    featured: false,
   },
 ];

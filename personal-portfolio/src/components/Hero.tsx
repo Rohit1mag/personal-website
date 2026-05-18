@@ -11,8 +11,8 @@ export default function Hero() {
       <div className="relative mx-auto max-w-6xl w-full flex flex-col md:flex-row md:items-center md:justify-between gap-12">
         <div className="flex-1">
         <div className="mb-4 animate-fade-in">
-          <span className="inline-block rounded-full border border-accent/50 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
-            Software Engineer
+          <span className="inline-block rounded-full border border-accent/50 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent max-w-xl">
+            {profile.title}
           </span>
         </div>
 

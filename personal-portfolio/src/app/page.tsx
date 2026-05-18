@@ -1,10 +1,10 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Leadership from "@/components/Leadership";
 import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -15,10 +15,10 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Skills />
         <Experience />
         <Leadership />
         <Projects />
-        <Skills />
         <Contact />
         <Footer />
       </main>

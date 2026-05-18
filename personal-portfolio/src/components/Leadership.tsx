@@ -12,10 +12,7 @@ export default function Leadership() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {leadership.map((role) => (
-            <div
-              key={role.org}
-              className="rounded-2xl border border-border bg-surface p-6"
-            >
+            <div key={`${role.org}-${role.role}`} className="rounded-2xl border border-border bg-surface p-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="rounded-lg bg-accent/10 p-2 shrink-0">
                   <AwardIcon />
@@ -26,7 +23,18 @@ export default function Leadership() {
                   <p className="text-muted text-xs">{role.period}</p>
                 </div>
               </div>
-              <p className="text-muted text-sm leading-relaxed">{role.description}</p>
+              {role.bullets ? (
+                <ul className="space-y-2">
+                  {role.bullets.map((b, i) => (
+                    <li key={i} className="text-muted text-sm leading-relaxed flex gap-2">
+                      <span className="text-accent mt-1.5 shrink-0">•</span>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-muted text-sm leading-relaxed">{role.description}</p>
+              )}
             </div>
           ))}
         </div>
